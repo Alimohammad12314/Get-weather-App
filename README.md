@@ -8,4 +8,5 @@ This is a weather app that tells weather based on the city searched by the user.
   <li>EJS</li>
   <li>NODE JS</li>
   <li>EXPRESS JS</li>
+  <li>Relevant npm Packages</li>
 </ul>

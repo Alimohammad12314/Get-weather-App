@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="styles/images/Wineass-Ios7-Redesign-Weather.512.png" type="image/x-icon">
+    <title>Get Weather</title>
+</head>
+<body>
+     <div class="container">
+        <div class="card">
+            <div class="content">
+                  <h1><%= temperature %> °C</h1>
+                  <p> Description: <%= weatherdata %> ! 
+                     </p>
+                  
+            </div>
+            <div>
+            <form action="/weather" method="POST" class="form">
+                 <input type="text" name="cityname" placeholder="Search by City Name" class="input">
+                 <button type="submit" class="btn">Get Weather</button>
+
+            </form>
+           </div> 
+        </div>
+     </div>
+</body>
+</html>

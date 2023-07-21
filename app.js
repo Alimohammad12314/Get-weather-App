@@ -6,7 +6,7 @@ import  'dotenv/config'
 const app=express();
 const port =process.env.PORT||8000
 
-const appid=process.env.apikey
+// const appid=process.env.apikey
 
 
 app.use(express.static("public"))
@@ -15,7 +15,7 @@ app.use(bodyparser.urlencoded({extended:true}))
 
 app.get("/", async (req, res) => {
     try {
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=delhi&units=metric&appid=${appid}`);
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=delhi&units=metric&appid=${apikey}`);
       const result =response.data;
       const temp=result.main.temp;
       const description=result.weather[0].description;

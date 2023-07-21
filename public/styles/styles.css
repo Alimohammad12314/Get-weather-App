@@ -64,3 +64,12 @@ body{
 .form{
     padding: 3px;
 }
+
+.footer{
+    color:white;
+    position: absolute;
+    bottom: 5px;
+    
+    
+    
+}

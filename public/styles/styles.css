@@ -19,7 +19,7 @@ body{
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.25);
     width: 25%;
-    height: 45vh;
+    height: 51vh;
     text-align: center;
     padding: 5px;
     border-radius: 6px;
@@ -34,12 +34,19 @@ body{
 @media only screen and (max-width: 600px) {
     .card{
         width: 42%;
-        height: 47vh;
+        height: 54vh;
         background: rgba(0, 0, 0, 0.18);
     }
    .body{
     background-size:contain;
 background-position:center;
+ font-size: x-large;
+   }
+   footer{
+    position: absolute;
+    bottom: 8px;
+    font-size: larger;
+    
    }
     
 }
@@ -90,3 +97,4 @@ background-position:center;
     
     
 }
+

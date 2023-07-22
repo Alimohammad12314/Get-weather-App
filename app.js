@@ -17,6 +17,9 @@ app.get("/", async (req, res) => {
     try {
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=delhi&units=metric&appid=${appid}`);
       const result =response.data;
+      
+      
+
       const temp=result.main.temp;
       const description=result.weather[0].description;
       const iconvalue=result.weather[0].icon;
@@ -25,6 +28,8 @@ app.get("/", async (req, res) => {
       res.render("index.ejs",{
         temperature:temp,
         weatherdata:description,
+        cityname:"Delhi"
+        
         
       });
     } catch (error) {
@@ -50,6 +55,7 @@ app.post("/weather", async (req, res) => {
       res.render("index.ejs",{
         temperature:temp,
         weatherdata:description,
+        cityname:cityname
        
       });
     } catch (error) {

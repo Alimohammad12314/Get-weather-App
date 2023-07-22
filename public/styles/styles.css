@@ -76,3 +76,16 @@ body{
     
     
 }
+
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 42%;
+        height: 47vh;
+        background: rgba(0, 0, 0, 0.18);
+    }
+   .body{
+    background-size:contain;
+background-position:center;
+   }
+    
+}

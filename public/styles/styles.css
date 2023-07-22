@@ -2,6 +2,7 @@ body{
     background: url("images/pexels-karolina-grabowska-4210915.jpg");
     background-size: cover;
     font-family: sans-serif;
+    
 }
 
 .container{
@@ -23,7 +24,23 @@ body{
     padding: 5px;
     border-radius: 6px;
     margin-top: 16vh;
+    position: absolute;
+    z-index: 300;
+    box-shadow: inset;
     
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 42%;
+        height: 47vh;
+        background: rgba(0, 0, 0, 0.18);
+    }
+   .body{
+    background-size:contain;
+background-position:center;
+   }
     
 }
 

@@ -16,13 +16,16 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.27);
+    background: rgba(0, 0, 0, 0.23);
     width: 25%;
     height: 45vh;
     text-align: center;
     padding: 5px;
     border-radius: 6px;
     margin-top: 16vh;
+     position: absolute;
+    z-index: 300;
+    box-shadow: inset;
     
     
 }
